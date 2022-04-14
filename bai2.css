@@ -1,0 +1,49 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: rgb(179, 64, 64);
+}
+.container{
+    margin:50px auto;
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+}
+img{
+    border:6px solid turquoise;
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+}
+.bt{
+    height: 50px;
+    width: 350px;
+    margin: 0 auto;
+}
+button{
+    height: 30px;
+    width: 60px;
+    background-color: royalblue;
+    border-radius: 10px;
+    border:0;
+    font-size: 24px;
+    cursor:pointer;
+}
+button:hover{
+    color: yellow;
+    background-color: tomato;
+}
+p{
+    color:aqua;
+    font-weight: bold;
+    font-size: 20px;
+}
+#title{
+    font-size: 29px;
+    font-weight: bold;
+    color:rgb(252, 252, 87);
+}
+#btn{
+    margin-top:10px;
+    width: 125px;
+}

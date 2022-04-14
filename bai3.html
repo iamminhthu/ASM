@@ -1,0 +1,97 @@
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/bai3.js"></script>
+    <link rel="stylesheet" href="bai3.css">
+    <script src="bai3.js"></script>
+    <title>Nguyễn Ngọc Minh Thư</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>BÁN HÀNG</h3>
+        <select name="bh" id="bh" onchange="locMucGia(this)">
+            <option value="0">Mức Giá</option>
+            <option value="1">0</option>
+            <option value="1">200</option>
+            <option value="2">400</option>
+            <option value="3">600</option>
+            <option value="4">800</option>
+        </select>
+        <hr>
+        <table border="1" cellpadding="4" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Hàng Hóa</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Thành Tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" onchange="change(this)"></td>
+                    <td>Iphone</td>
+                    <td>700</td>
+                    <td id="sl"><input disabled id="sl" type="text" onkeyup="tinhtien(this);"></td>
+                    <td class="tt">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onchange="change(this)"></td>
+                    <td>Samsung</td>
+                    <td>400</td>
+                    <td><input disabled class="sl" id="s1" type="text" onkeyup="tinhtien(this);"></td>
+                    <td class="tt">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onchange="change(this)"></td>
+                    <td>Nokia</td>
+                    <td>100</td>
+                    <td><input disabled id="sl" type="text" onkeyup="tinhtien(this);"></td>
+                    <td class="tt">0</td>
+                </tr>
+                <tr>
+                    <td><input id="sl" type="checkbox" onchange="change(this)"></td>
+                    <td>Sony Xperia</td>
+                    <td>450</td>
+                    <td id="sl"><input disabled type="text" onkeyup="tinhtien(this);"></td>
+                    <td class="tt">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onchange="change(this)"></td>
+                    <td>Motorala</td>
+                    <td>180</td>
+                    <td id="sl"><input disabled id="sl" type="text" onkeyup="tinhtien(this);"></td>
+                    <td class="tt">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onchange="change(this)"></td>
+                    <td>Oppo</td>
+                    <td>370</td>
+                    <td id="sl"><input disabled id="sl" type="text" onkeyup="tinhtien(this);"></td>
+                    <td class="tt">0</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onchange="change(this)"></td>
+                    <td>Bphone</td>
+                    <td>90</td>
+                    <td id="sl"><input disabled id="sl" type="text" onkeyup="tinhtien(this);"></td>
+                    <td class="tt">0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Tổng</th>
+                    <th id="tong">0</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

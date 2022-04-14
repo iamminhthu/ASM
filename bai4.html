@@ -1,0 +1,54 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Ngọc Minh Thư</title>
+    <link rel="stylesheet" href="bai4.css" />
+    <script src="bai4.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>ĐĂNG KÝ THÀNH VIÊN</h3>
+        <div class="form">
+            <p>Mã sinh viên</p>
+            <input type="text" class="ip" id="msv" />
+            <p id="erroMasv" class="er"></p>
+            <p>Họ và tên</p>
+            <input type="text" class="ip" id="hvt" />
+            <p id="erroHvt" class="er"></p>
+            <p>Email</p>
+            <input type="text" class="ip" id="email" />
+            <p id="erroEmail" class="er"></p>
+            <p>Giới tính</p>
+            <form action="" class="gt form2" id="gt" onchange="checkDK()">
+                <input type="radio" name="gt" value="0" />Nam
+                <input type="radio" name="gt" value="1" />Nữ
+            </form>
+            <p>Sở thích</p>
+            <form class="form2" action="" onchange="checkDK()">
+                <input type="checkbox" value="0">Đọc sách
+                <input type="checkbox" value="1">Du lịch
+                <input type="checkbox" value="2">Ẩm thực
+                <input type="checkbox" value="3">Âm nhạc
+                <input type="checkbox" value="4">Khác
+            </form>
+            <p>Quốc tịch</p>
+            <select name="qt" onchange="checkDK()">
+          <option value="">Quốc tịch</option>
+          <option value="1">Việt Nam</option>
+          <option value="2">Mỹ  </option>
+        </select>
+            <p>Ghi chú</p>
+            <textarea class="node" cols="62" rows="5"></textarea>
+        </div>
+        <div id="button">
+            <button type="button" onclick="dangky()">Đăng Ký</button>
+        </div>
+    </div>
+</body>
+
+</html>

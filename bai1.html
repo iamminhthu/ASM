@@ -1,0 +1,48 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Ngọc Minh Thư    
+    </title>
+    <link href="bai1.css" rel="stylesheet" />
+    <script src="bai1.js"></script>
+</head>
+
+<body onload='StartTime();'>
+    <div class="container">
+        <div class="header">
+            <h3>GIẢI PHƯƠNG TRÌNH ax<sup>2</sup> + bx + c = 0</h3>
+            <p>số lần giải: <span id="solangiai">0</span></p>
+        </div>
+        <div class="content">
+            <div class="input">
+                Nhập số a:
+                <input type="text" name="" value="" id="a"> </br>
+            </div>
+            <div class="input">
+                Nhập số b:
+                <input type="text" name="" value="" id="b"> </br>
+            </div>
+            <div class="input">
+                Nhập số b:
+                <input type="text" name="" value="" id="c"> </br>
+            </div>
+            <div id="hienthi">
+                <button disabled="disabled" onclick='TinhToan();'>GIẢI PT</button>
+                <button onclick='ChoSo();'>CHO SỐ</button>
+            </div>
+            <div class="ketqua">
+                <p id="ketqua"></p>
+                <p id="x0"></p>
+                <p id="x1"></p>
+                <p id="x2"></p>
+            </div>
+            <div id="timer"></div>
+        </div>
+    </div>
+</body>
+
+</html>
